@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập 2</title>
+</head>
+<body>
+<script>
+   let inputNum = prompt("Enter A Number: ");
+   let result = [inputNum[0]];
+   for (let i = 1; i < inputNum.length; i++) {
+       if ((inputNum[i-1]%2===0)&&(inputNum[i]%2===0)){
+           result.push("-" ,inputNum[i]);
+       }else {
+            result.push(inputNum[i]);
+        }
+   }
+   console.log(result)
+   console.log(result.join(""))
+</script>
+</body>
+</html>
